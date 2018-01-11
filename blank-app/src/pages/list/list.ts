@@ -15,6 +15,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListPage {
 
+  items = [
+    'Tom',
+    'Jerry',
+    'Tom',
+    'Jerry',
+    'Tom',
+    'Jerry',
+    'Tom',
+    'Jerry',
+    'Tom',
+    'Jerry',
+    'Tom',
+    'Jerry',
+    'Tom',
+    'Jerry'
+  ];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
