@@ -115,6 +115,6 @@
 
   <p>列表项数据来自于类</p>
   <ion-list>
-    <button *ngFor="let item of items" ion-item>{{item}}</button>
+    <button *ngFor="let item of items" ion-item (click)="itemSelected(item)">{{item}}</button>
   </ion-list>
 </ion-content>
