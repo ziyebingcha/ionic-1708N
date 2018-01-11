@@ -38,7 +38,6 @@
     <ion-item>Jerry</ion-item>
   </ion-list>
 
-
   <p>列表分割项</p>
   <ion-item-group>
     <ion-item-divider>Students</ion-item-divider>
@@ -48,4 +47,28 @@
     <ion-item>Tom 1</ion-item>
     <ion-item>Jerry 1</ion-item>
   </ion-item-group>
+
+  <p>列表头部</p>
+  <ion-list>
+    <ion-list-header>Students</ion-list-header>
+    <ion-item>Tom</ion-item>
+    <ion-item>Jerry</ion-item>
+  </ion-list>
+
+  <p>图标作为列表项</p>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="heart" item-start color="danger"></ion-icon>
+      Tom
+    </ion-item>
+    <ion-item>
+      Jerry
+      <ion-icon name="heart" item-end color="danger"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="heart" item-start color="danger"></ion-icon>
+      Tom Jerry
+      <ion-icon name="heart" item-end color="danger"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
