@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import {Gesture, IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -10,6 +10,7 @@ import {ButtonPage} from "../pages/button/button";
 import {ListPage} from "../pages/list/list";
 import {CardPage} from "../pages/card/card";
 import {FabPage} from "../pages/fab/fab";
+import {GesturePage} from "../pages/gesture/gesture";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FabPage} from "../pages/fab/fab";
     ButtonPage,
     ListPage,
     CardPage,
-    FabPage
+    FabPage,
+    GesturePage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import {FabPage} from "../pages/fab/fab";
     ButtonPage,
     ListPage,
     CardPage,
-    FabPage // 双 Shift
+    FabPage, // 双 Shift
+    GesturePage
   ],
   providers: [
     StatusBar,

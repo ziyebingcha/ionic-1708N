@@ -1,0 +1,22 @@
+<!--
+  Generated template for the GesturePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>手势动作示例</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card (tap)="tapEvent()">
+    <ion-item>
+      点击了： {{tapNumber}} 次
+    </ion-item>
+  </ion-card>
+</ion-content>
