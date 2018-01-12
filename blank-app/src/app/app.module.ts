@@ -14,6 +14,7 @@ import {GesturePage} from "../pages/gesture/gesture";
 import {GridPage} from "../pages/grid/grid";
 import {FormPage} from "../pages/form/form";
 import {ToastPage} from "../pages/toast/toast";
+import {IconPage} from "../pages/icon/icon";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {ToastPage} from "../pages/toast/toast";
     GesturePage,
     GridPage,
     FormPage,
-    ToastPage
+    ToastPage,
+    IconPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import {ToastPage} from "../pages/toast/toast";
     GesturePage,
     GridPage,
     FormPage,
-    ToastPage
+    ToastPage,
+    IconPage
   ],
   providers: [
     StatusBar,
