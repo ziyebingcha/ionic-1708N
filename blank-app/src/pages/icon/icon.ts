@@ -15,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class IconPage {
 
+  testIcon:string = 'medical';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
