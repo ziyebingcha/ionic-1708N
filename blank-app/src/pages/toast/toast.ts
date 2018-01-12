@@ -32,4 +32,22 @@ export class ToastPage {
     });
     toast.present(); // 出现
   }
+
+  showToastPosition(){
+    let toast = this.toastCtrl.create({
+      message: 'toast message...',
+      duration: 3000,
+      position: 'top'
+    });
+    toast.present(); // 出现
+  }
+
+  showToastClose(){
+    let toast = this.toastCtrl.create({
+      message: 'toast message...',
+      showCloseButton: true,
+      closeButtonText: 'OK'
+    });
+    toast.present(); // 出现
+  }
 }
