@@ -33,11 +33,11 @@ export class ToastPage {
     toast.present(); // 出现
   }
 
-  showToastPosition(){
+  showToastPosition(postion){
     let toast = this.toastCtrl.create({
       message: 'toast message...',
       duration: 3000,
-      position: 'top'
+      position: postion
     });
     toast.present(); // 出现
   }
