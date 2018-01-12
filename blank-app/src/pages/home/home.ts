@@ -8,6 +8,7 @@ import {FabPage} from "../fab/fab";
 import {GesturePage} from "../gesture/gesture";
 import {GridPage} from "../grid/grid";
 import {FormPage} from "../form/form";
+import {ToastPage} from "../toast/toast";
 
 @Component({
   selector: 'page-home',
@@ -22,6 +23,7 @@ export class HomePage {
   gesturePage;
   gridPage;
   formPage;
+  toastPage;
 
   constructor(public navCtrl: NavController) {
     this.buttonPage = ButtonPage;
@@ -31,6 +33,7 @@ export class HomePage {
     this.gesturePage = GesturePage;
     this.gridPage = GridPage;
     this.formPage = FormPage;
+    this.toastPage = ToastPage;
   }
 
 }
