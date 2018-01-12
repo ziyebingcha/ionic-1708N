@@ -39,11 +39,11 @@
     <ion-list-header>Hobbies</ion-list-header>
     <ion-item>
       <ion-label>Reading</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-checkbox checked></ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-label>Game</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-checkbox disabled></ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-label>Birthday</ion-label>
@@ -53,13 +53,25 @@
       <ion-list-header>Gender</ion-list-header>
       <ion-item>
         <ion-label>Male</ion-label>
-        <ion-radio></ion-radio>
+        <ion-radio checked></ion-radio>
       </ion-item>
       <ion-item>
         <ion-label>Female</ion-label>
         <ion-radio></ion-radio>
       </ion-item>
     </ion-list>
+    <ion-item>
+      <ion-label>Skills</ion-label>
+      <ion-range></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>City</ion-label>
+      <ion-select>
+        <ion-option>Beijing</ion-option>
+        <ion-option selected>Shanghai</ion-option>
+        <ion-option>Guangzhou</ion-option>
+      </ion-select>
+    </ion-item>
   </ion-list>
 
   <button ion-button>Sign up</button>
