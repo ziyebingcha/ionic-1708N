@@ -16,6 +16,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class GesturePage {
 
   tapNumber: number = 0;
+  pressNumber: number = 0;
+  panNumber: number = 0;
+  swipeNumber: number = 0;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -26,5 +29,17 @@ export class GesturePage {
 
   tapEvent() {
     this.tapNumber++;
+  }
+
+  pressEvent() {
+    this.pressNumber++;
+  }
+
+  panEvent() {
+    this.panNumber++;
+  }
+
+  swipeEvent() {
+    this.swipeNumber++;
   }
 }

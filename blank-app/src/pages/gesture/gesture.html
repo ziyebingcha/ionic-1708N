@@ -12,11 +12,33 @@
 
 </ion-header>
 
-
 <ion-content padding>
+  <p>轻点 tap</p>
   <ion-card (tap)="tapEvent()">
     <ion-item>
-      点击了： {{tapNumber}} 次
+      轻点了：{{tapNumber}} 次
+    </ion-item>
+  </ion-card>
+
+  <p>点按 press</p>
+  <ion-card (press)="pressEvent()">
+    <ion-item>
+      点按了：{{pressNumber}} 次
+    </ion-item>
+  </ion-card>
+
+  <p>移动 pan</p>
+  <ion-card (pan)="panEvent()">
+    <ion-item>
+      移动了：{{panNumber}} 次
+    </ion-item>
+  </ion-card>
+
+  <p>滑动 swipe</p>
+  <ion-card (swipe)="swipeEvent()">
+    <ion-item>
+      滑动了：{{swipeNumber}} 次
     </ion-item>
   </ion-card>
 </ion-content>
+
