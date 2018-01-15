@@ -43,4 +43,7 @@ export class HomePage {
     this.signUpPage = SignUpPage;
   }
 
+  navToLazyTestPage():void {
+    this.navCtrl.push('LazyTestPage');
+  }
 }
