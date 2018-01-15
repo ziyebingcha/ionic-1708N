@@ -10,47 +10,46 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
   }
 
-  navToButtonPage():void {
-    this.navCtrl.push('ButtonPage');
+  navigate(page: string): void {
+    switch (page) {
+      case 'button':
+        this.navCtrl.push('ButtonPage');
+        break;
+      case 'list':
+        this.navCtrl.push('ListPage');
+        break;
+      case 'card':
+        this.navCtrl.push('CardPage');
+        break;
+      case 'fab':
+        this.navCtrl.push('FabPage');
+        break;
+      case 'gesture':
+        this.navCtrl.push('GesturePage');
+        break;
+      case 'grid':
+        this.navCtrl.push('GridPage');
+        break;
+      case 'form':
+        this.navCtrl.push('FormPage');
+        break;
+      case 'toast':
+        this.navCtrl.push('ToastPage');
+        break;
+      case 'icon':
+        this.navCtrl.push('Page');
+        break;
+      case 'signUp':
+        this.navCtrl.push('signUpPage');
+        break;
+      case 'lazyTest':
+        this.navCtrl.push('lazyTestPage');
+        break;
+      default:
+        break;
+    }
   }
 
-  navToListPage():void {
-    this.navCtrl.push('ListPage');
-  }
-
-  navToCardPage():void {
-    this.navCtrl.push('CardPage');
-  }
-
-  navToFabPage():void {
-    this.navCtrl.push('FabPage');
-  }
-
-  navToGesturePage():void {
-    this.navCtrl.push('GesturePage');
-  }
-
-  navToGridPage():void {
-    this.navCtrl.push('GridPage');
-  }
-
-  navToFormPage():void {
-    this.navCtrl.push('FormPage');
-  }
-
-  navToToastPage():void {
-    this.navCtrl.push('ToastPage');
-  }
-
-  navToIconPage():void {
-    this.navCtrl.push('IconPage');
-  }
-
-  navToSignUpPage():void {
-    this.navCtrl.push('SignUpPage');
-  }
-
-  navToLazyTestPage():void {
-    this.navCtrl.push('LazyTestPage');
-  }
 }
+
+// 10:50
