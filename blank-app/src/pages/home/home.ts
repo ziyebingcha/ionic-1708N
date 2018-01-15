@@ -1,46 +1,53 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 
-import {ButtonPage} from "../button/button";
-import {ListPage} from "../list/list";
-import {CardPage} from "../card/card";
-import {FabPage} from "../fab/fab";
-import {GesturePage} from "../gesture/gesture";
-import {GridPage} from "../grid/grid";
-import {FormPage} from "../form/form";
-import {ToastPage} from "../toast/toast";
-import {IconPage} from "../icon/icon";
-import {SignUpPage} from "../sign-up/sign-up";
-
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
-  buttonPage;
-  listPage;
-  cardPage;
-  fabPage;
-  gesturePage;
-  gridPage;
-  formPage;
-  toastPage;
-  iconPage;
-  signUpPage;
-
   constructor(public navCtrl: NavController) {
-    this.buttonPage = ButtonPage;
-    this.listPage = ListPage;
-    this.cardPage = CardPage;
-    this.fabPage = FabPage;
-    this.gesturePage = GesturePage;
-    this.gridPage = GridPage;
-    this.formPage = FormPage;
-    this.toastPage = ToastPage;
-    this.iconPage = IconPage;
-    this.signUpPage = SignUpPage;
+  }
+
+  navToButtonPage():void {
+    this.navCtrl.push('ButtonPage');
+  }
+
+  navToListPage():void {
+    this.navCtrl.push('ListPage');
+  }
+
+  navToCardPage():void {
+    this.navCtrl.push('CardPage');
+  }
+
+  navToFabPage():void {
+    this.navCtrl.push('FabPage');
+  }
+
+  navToGesturePage():void {
+    this.navCtrl.push('GesturePage');
+  }
+
+  navToGridPage():void {
+    this.navCtrl.push('GridPage');
+  }
+
+  navToFormPage():void {
+    this.navCtrl.push('FormPage');
+  }
+
+  navToToastPage():void {
+    this.navCtrl.push('ToastPage');
+  }
+
+  navToIconPage():void {
+    this.navCtrl.push('IconPage');
+  }
+
+  navToSignUpPage():void {
+    this.navCtrl.push('SignUpPage');
   }
 
   navToLazyTestPage():void {

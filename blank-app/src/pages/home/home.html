@@ -7,16 +7,16 @@
 </ion-header>
 
 <ion-content>
-  <button ion-button [navPush]="buttonPage" full>按钮示例</button>
-  <button ion-button [navPush]="listPage" full>列表示例</button>
-  <button ion-button [navPush]="cardPage" full>卡片示例</button>
-  <button ion-button [navPush]="fabPage" full>浮动按钮示例</button>
-  <button ion-button [navPush]="gesturePage" full>手势动作示例</button>
-  <button ion-button [navPush]="gridPage" full>栅格系统示例</button>
-  <button ion-button [navPush]="formPage" full>表单示例</button>
-  <button ion-button [navPush]="toastPage" full>Toast 示例</button>
-  <button ion-button [navPush]="iconPage" full>图标示例</button>
-  <button ion-button [navPush]="signUpPage" full>注册示例</button>
+  <button ion-button (click)="navToButtonPage()" full>按钮示例</button>
+  <button ion-button (click)="navToListPage()" full>列表示例</button>
+  <button ion-button (click)="navToCardPage()" full>卡片示例</button>
+  <button ion-button (click)="navToFabPage()" full>浮动按钮示例</button>
+  <button ion-button (click)="navToGesturePage()" full>手势动作示例</button>
+  <button ion-button (click)="navToGridPage()" full>栅格系统示例</button>
+  <button ion-button (click)="navToFormPage()" full>表单示例</button>
+  <button ion-button (click)="navToToastPage()" full>Toast 示例</button>
+  <button ion-button (click)="navToIconPage()" full>图标示例</button>
+  <button ion-button (click)="navToSignUpPage()" full>注册示例</button>
   <button ion-button (click)="navToLazyTestPage()" full>懒加载示例</button>
 </ion-content>
 
