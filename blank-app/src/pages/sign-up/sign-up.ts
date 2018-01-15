@@ -37,8 +37,13 @@ export class SignUpPage {
     console.error(`username: ${username}`);
     console.error(`password: ${password}`);
 
-// todo HTTP request to Server
-//     http.
+
+    // 客户端发送注册请求
+    let url = `http://127.0.0.1:3000/signUp?username=${username}&password=${password}`;
+    this.http.request(url)
+      .subscribe((res:Response) => {
+          console.error(res.json());
+      })
   }
 
 }
