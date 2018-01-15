@@ -38,7 +38,7 @@ export class SignUpPage {
     console.error(`password: ${password}`);
 
 // todo HTTP request to Server
-
+//     http.
   }
 
 }

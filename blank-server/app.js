@@ -8,8 +8,12 @@ app.get('/', (req, res) => {
 
 // http://127.0.0.1:3000/signUp?username=Tom&password=123
 app.get('/signUp', (req, res) => {
-    console.log(req.query.username);
-    console.log(req.query.password);
+
+    let username = req.query.username;
+    let password = req.query.password;
+
+    console.log(username);
+    console.log(password);
 
     // todo save user into DB: INSERT INTO...
 
