@@ -51,5 +51,3 @@ export class HomePage {
   }
 
 }
-
-// 10:50
