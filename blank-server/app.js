@@ -1,4 +1,9 @@
 const express = require('express');
+const mysql = require('mysql');
+
+let pool = mysql.createPool({
+    user: 'root'
+});
 
 let app = new express();
 
@@ -12,12 +17,17 @@ app.get('/signUp', (req, res) => {
     let username = req.query.username;
     let password = req.query.password;
 
-    console.log(username);
-    console.log(password);
+    let sql = 'INSERT INTO db.user VALUE(NULL, ?, ?)';
 
-    // todo save user into DB: INSERT INTO...
+    pool.query(sql, [username, password], (err, results, fields) => {
+        if (err) throw err;
+        if (results.affectedRows === 1) {
+            res.send({"status": "ok"});
+        } else {
+            res.send({"status": "err"});
+        }
+    });
 
-    res.send({"status":"ok"});
 });
 
 app.listen(3000);

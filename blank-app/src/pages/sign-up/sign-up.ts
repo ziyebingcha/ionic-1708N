@@ -41,12 +41,12 @@ export class SignUpPage {
     // 客户端发送注册请求
     let url = `/signUp?username=${username}&password=${password}`;
     this.http.request(url)
-      .subscribe((res:Response) => {
-          console.error(res.json());
+      .subscribe((res: Response) => {
+        console.error(res.json());
         if (res.json().status === 'ok') {
-          // todo success
+          this.navCtrl.push('HomePage')
         } else {
-          // todo error
+          this.navCtrl.push('SignUpPage')
         }
       })
   }

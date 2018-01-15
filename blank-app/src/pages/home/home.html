@@ -7,17 +7,31 @@
 </ion-header>
 
 <ion-content>
-  <button ion-button (click)="navigate('button')" full>按钮示例</button>
-  <button ion-button (click)="navigate('list')" full>列表示例</button>
-  <button ion-button (click)="navigate('card')" full>卡片示例</button>
-  <button ion-button (click)="navigate('fab')" full>浮动按钮示例</button>
-  <button ion-button (click)="navigate('gesture')" full>手势动作示例</button>
-  <button ion-button (click)="navigate('grid')" full>栅格系统示例</button>
-  <button ion-button (click)="navigate('form')" full>表单示例</button>
-  <button ion-button (click)="navigate('toast')" full>Toast 示例</button>
-  <button ion-button (click)="navigate('icon')" full>图标示例</button>
-  <button ion-button (click)="navigate('signUp')" full>注册示例</button>
-  <button ion-button (click)="navigate('lazyTest')" full>懒加载示例</button>
+  <!--<button ion-button (click)="navigate('button')" full>按钮示例</button>-->
+  <!--<button ion-button (click)="navigate('list')" full>列表示例</button>-->
+  <!--<button ion-button (click)="navigate('card')" full>卡片示例</button>-->
+  <!--<button ion-button (click)="navigate('fab')" full>浮动按钮示例</button>-->
+  <!--<button ion-button (click)="navigate('gesture')" full>手势动作示例</button>-->
+  <!--<button ion-button (click)="navigate('grid')" full>栅格系统示例</button>-->
+  <!--<button ion-button (click)="navigate('form')" full>表单示例</button>-->
+  <!--<button ion-button (click)="navigate('toast')" full>Toast 示例</button>-->
+  <!--<button ion-button (click)="navigate('icon')" full>图标示例</button>-->
+  <!--<button ion-button (click)="navigate('lazyTest')" full>懒加载示例</button>-->
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="User.username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="User.password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block color="primary" (click)="signIn()">Sign In</button>
+
+  <button ion-button (click)="navigate('signUp')" full color="secondary">Sign Up</button>
 </ion-content>
 
 
