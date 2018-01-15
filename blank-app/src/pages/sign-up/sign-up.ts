@@ -39,10 +39,15 @@ export class SignUpPage {
 
 
     // 客户端发送注册请求
-    let url = `http://127.0.0.1:3000/signUp?username=${username}&password=${password}`;
+    let url = `/signUp?username=${username}&password=${password}`;
     this.http.request(url)
       .subscribe((res:Response) => {
           console.error(res.json());
+        if (res.json().status === 'ok') {
+          // todo success
+        } else {
+          // todo error
+        }
       })
   }
 

@@ -17,8 +17,7 @@ app.get('/signUp', (req, res) => {
 
     // todo save user into DB: INSERT INTO...
 
-    res.end('sign up...');
+    res.send({"status":"ok"});
 });
-
 
 app.listen(3000);

@@ -2,5 +2,11 @@
   "name": "blank-app",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {},
+  "proxies": [
+    {
+      "path": "/signUp",
+      "proxyUrl": "http://127.0.0.1:3000/signUp"
+    }
+  ]
 }
