@@ -40,10 +40,10 @@ export class HomePage {
         this.navCtrl.push('Page');
         break;
       case 'signUp':
-        this.navCtrl.push('signUpPage');
+        this.navCtrl.push('SignUpPage');
         break;
       case 'lazyTest':
-        this.navCtrl.push('lazyTestPage');
+        this.navCtrl.push('LazyTestPage');
         break;
       default:
         break;
