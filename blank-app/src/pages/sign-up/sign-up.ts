@@ -34,11 +34,9 @@ export class SignUpPage {
   signUp(): void {
     let username = this.User.username;
     let password = this.User.password;
-    console.error(`username: ${username}`);
-    console.error(`password: ${password}`);
+    console.error(`use:`, this.User);
 
-
-    // 客户端发送注册请求
+    // 客户端发送注册请求，代理解决了跨域问题
     let url = `/signUp?username=${username}&password=${password}`;
     this.http.request(url)
       .subscribe((res: Response) => {
@@ -48,7 +46,7 @@ export class SignUpPage {
         } else {
           this.navCtrl.push('SignUpPage')
         }
-      })
+      });
   }
 
 }

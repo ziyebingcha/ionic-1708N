@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController} from 'ionic-angular';
+import {Http, Response} from "@angular/http";
 
 
 @IonicPage()
@@ -15,10 +16,19 @@ export class HomePage {
   };
 
   signIn(): void {
-    // todo
+    let username: string = this.User.username;
+    let password: string = this.User.password;
+    console.error(`User: `, this.User);
+
+    let url: string = `/signIn?username=${username}&password=${password}`;
+    this.http.request(url)
+      .subscribe((res: Response) => {
+          console.error(res.json());
+      });
   }
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+              private http: Http) {
   }
 
   navigate(page: string): void {

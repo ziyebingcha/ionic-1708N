@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <!--<button ion-button (click)="navigate('button')" full>按钮示例</button>-->
   <!--<button ion-button (click)="navigate('list')" full>列表示例</button>-->
   <!--<button ion-button (click)="navigate('card')" full>卡片示例</button>-->
@@ -32,6 +32,8 @@
   <button ion-button block color="primary" (click)="signIn()">Sign In</button>
 
   <button ion-button (click)="navigate('signUp')" full color="secondary">Sign Up</button>
+
+  <h1>{{User.password}}</h1>
 </ion-content>
 
 
